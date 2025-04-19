@@ -1,0 +1,247 @@
+:root {
+  --max-width: 1000px;
+  --title-font-size: 1.5rem;
+  --text-font-weight-light: 100;
+  --margin-bottom-spacer: 8rem;
+  --hover-highlight-light-blue: rgb(216, 214, 238);
+  --primary-dark: #121212;
+  --primary-light: #f8f8f8;
+  --primary-gray: #333333;
+  --secondary-gray: #777777;
+  --accent-gray: #e0e0e0;
+  --input-border: #cccccc;
+  --button-hover: #222222;
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 2rem;
+  --spacing-lg: 3rem;
+}
+
+body {
+  font-family: "Saira", sans-serif;
+  background-color: var(--primary-light);
+  color: var(--primary-dark);
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navigation Section */
+#nav-container {
+  max-width: var(--max-width);
+  margin-bottom: var(--margin-bottom-spacer);
+  box-sizing: border-box;
+  margin-inline-start: auto;
+  margin-inline-end: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-title {
+  box-sizing: border-box;
+}
+
+.nav-title a {
+  text-decoration: none;
+  color: var(--primary-dark);
+}
+
+.nav-menu-container {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+  box-sizing: border-box;
+  gap: 4rem;
+}
+
+.nav-items {
+  box-sizing: border-box;
+  font-weight: 300;
+}
+.nav-items a {
+  color: var(--primary-dark);
+  text-decoration: none;
+}
+/* Navigation Section */
+/* Hero Section */
+#hero-section {
+  max-width: var(--max-width);
+  margin-bottom: var(--margin-bottom-spacer);
+  box-sizing: border-box;
+  margin-inline-start: auto;
+  margin-inline-end: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-image: url("assets/mission-background.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 4rem 2rem;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+#hero-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.hero-title-container {
+  height: 100%;
+  width: 50%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 2;
+  color: white;
+}
+
+.hero-title {
+  font-size: var(--title-font-size);
+  font-weight: 400;
+  line-height: 2.5rem;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+.hero-image {
+  border-radius: 10px;
+  position: relative;
+  z-index: 2;
+  height: 220px;
+  object-fit: cover;
+  /* width: 400px; */
+}
+/* Hero Section */
+/* Main Content */
+.mission-reasons-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: var(--spacing-md);
+}
+
+.page-header {
+  text-align: center;
+  margin-bottom: var(--spacing-lg);
+  border-bottom: 2px solid var(--primary-dark);
+  padding-bottom: var(--spacing-sm);
+}
+
+.page-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  color: var(--secondary-gray);
+  margin-top: 0;
+}
+/* Main Content */
+/* Reasons Grid */
+.reasons-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-lg);
+}
+
+.reason-card {
+  background-color: white;
+  border: 1px solid var(--accent-gray);
+  border-radius: 8px;
+  padding: var(--spacing-md);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.reason-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.reason-icon {
+  background-color: var(--primary-gray);
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: var(--spacing-sm);
+}
+
+.reason-icon img {
+  width: 30px;
+  height: 30px;
+  filter: invert(1);
+}
+
+.reason-card h2 {
+  margin-top: 0;
+  font-size: 1.4rem;
+  border-bottom: 2px solid var(--accent-gray);
+  padding-bottom: 0.5rem;
+  margin-bottom: var(--spacing-sm);
+}
+
+.reason-card p {
+  margin: 0;
+  color: var(--secondary-gray);
+}
+/* Reasons Grid */
+/* Quote Section */
+.quote-section {
+  background-color: var(--primary-gray);
+  color: white;
+  padding: var(--spacing-lg);
+  border-radius: 8px;
+  margin-top: var(--spacing-lg);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+blockquote {
+  font-size: 1.4rem;
+  font-style: italic;
+  margin: 0;
+  text-align: center;
+  line-height: 1.8;
+}
+
+blockquote cite {
+  display: block;
+  margin-top: var(--spacing-sm);
+  font-size: 1rem;
+  text-align: right;
+  font-style: normal;
+}
+/* Quote Section */
+/* Footer Section */
+.site-footer {
+  padding: 1.5rem 0;
+  text-align: center;
+  background-color: #f8f8f8;
+}
+
+.footer-divider {
+  height: 1px;
+  background-color: #333;
+  max-width: 80%;
+  margin: 0 auto 1rem auto;
+}
+
+.copyright-text {
+  color: #333;
+  font-size: 0.9rem;
+  margin: 0;
+}
+/* Footer Section */

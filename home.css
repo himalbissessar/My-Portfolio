@@ -1,0 +1,287 @@
+:root {
+  --max-width: 1000px;
+  --title-font-size: 1.5rem;
+  --text-font-weight-light: 100;
+  --margin-bottom-spacer: 8rem;
+  --hover-highlight-light-blue: rgb(216, 214, 238);
+  --primary-dark: #121212;
+  --primary-light: #f8f8f8;
+  --primary-gray: #333333;
+  --secondary-gray: #777777;
+  --accent-gray: #e0e0e0;
+  --input-border: #cccccc;
+  --button-hover: #222222;
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 2rem;
+  --spacing-lg: 3rem;
+}
+
+body {
+  font-family: "Saira", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+/* Navigation Section */
+#nav-container {
+  max-width: var(--max-width);
+  margin-bottom: var(--margin-bottom-spacer);
+  box-sizing: border-box;
+  margin-inline-start: auto;
+  margin-inline-end: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-title {
+  box-sizing: border-box;
+}
+
+.nav-title a {
+  text-decoration: none;
+  color: var(--primary-dark);
+}
+
+.nav-menu-container {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+  box-sizing: border-box;
+  gap: 4rem;
+}
+
+.nav-items {
+  box-sizing: border-box;
+  font-weight: 300;
+}
+
+.nav-items a {
+  color: var(--primary-dark);
+  text-decoration: none;
+}
+/* Navigation Section */
+
+/* Hero Section */
+#hero-section {
+  max-width: var(--max-width);
+  margin-bottom: var(--margin-bottom-spacer);
+  box-sizing: border-box;
+  margin-inline-start: auto;
+  margin-inline-end: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-image: url("assets/home-space-background.jpg"); /* Add your actual path to Image 2 */
+  background-size: cover;
+  background-position: center;
+  padding: 4rem 2rem;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+#hero-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.hero-title-container {
+  height: 100%;
+  width: 50%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 2;
+  color: white;
+}
+
+.hero-title {
+  font-size: var(--title-font-size);
+  font-weight: 400;
+  line-height: 2.5rem;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+.hero-image {
+  border-radius: 10px;
+  position: relative;
+  z-index: 2;
+  height: 220px;
+  object-fit: cover;
+  /* width: 400px; */
+}
+/* Hero Section */
+
+/* Missions Table Section */
+
+#missions-section {
+  max-width: var(--max-width);
+  margin-bottom: var(--margin-bottom-spacer);
+  margin-inline-start: auto;
+  margin-inline-end: auto;
+}
+
+.missions-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 25px 0;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.missions-table thead tr {
+  background-color: #212121;
+  color: white;
+  text-align: left;
+  font-weight: bold;
+}
+
+.missions-table th,
+.missions-table td {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+}
+
+.missions-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.missions-table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.missions-table tbody tr:hover {
+  background-color: #e5e5e5;
+  cursor: pointer;
+}
+
+.missions-table tbody tr:last-of-type {
+  border-bottom: 2px solid #212121;
+}
+
+.title-header {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #212121;
+}
+
+.missions-table tbody tr td:first-child {
+  font-weight: bold;
+  background-color: #f8f8f8;
+}
+
+.missions-table tbody tr td:nth-child(2) {
+  font-weight: bold;
+}
+
+/* Missions Table Section */
+
+/* Space Organisation Cards Section */
+#org-facts-section {
+  max-width: var(--max-width);
+  margin-bottom: var(--margin-bottom-spacer);
+  margin-inline-start: auto;
+  margin-inline-end: auto;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin: 30px 0;
+}
+
+.org-card {
+  width: 300px;
+  border: 2px solid black;
+  box-shadow: 5px 5px 0px rgba(0, 0, 0, 0.2);
+  background-color: white;
+  transition: transform 0.3s ease;
+}
+
+.org-card:hover {
+  transform: translateY(-5px);
+}
+
+.card-header {
+  border-bottom: 1px solid black;
+  padding: 15px;
+  background-color: #f8f8f8;
+}
+
+.card-header h2 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.card-header h3 {
+  margin: 5px 0 0 0;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: italic;
+}
+
+.card-body {
+  padding: 15px;
+}
+
+.card-body p {
+  margin: 10px 0;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+.card-footer {
+  padding: 15px;
+  border-top: 1px solid black;
+  text-align: right;
+}
+
+.learn-more {
+  display: inline-block;
+  padding: 8px 15px;
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.learn-more:hover {
+  background-color: #333;
+}
+
+/* Space Organisation Cards Section */
+
+/* Footer Section */
+.site-footer {
+  padding: 1.5rem 0;
+  text-align: center;
+  background-color: #f8f8f8;
+}
+
+.footer-divider {
+  height: 1px;
+  background-color: #333;
+  max-width: 80%;
+  margin: 0 auto 1rem auto;
+}
+
+.copyright-text {
+  color: #333;
+  font-size: 0.9rem;
+  margin: 0;
+}
+/* Footer Section */

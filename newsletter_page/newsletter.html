@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="newsletter.css" />
+    <title>Newsletter</title>
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header>
+      <nav id="nav-container">
+        <h1 class="nav-title"><a href="../home.html">Beyond Earth</a></h1>
+        <ul class="nav-menu-container">
+          <li class="nav-items"><a href="../planets_page/planets.html">Planets</a></li>
+          <li class="nav-items"><a href="../missions_page/missions.html">Missions</a></li>
+          <li class="nav-items"><a href="/newsletter.html">Newsletter</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- Header Section -->
+    <!-- Main Section -->
+    <main class="newsletter-container">
+      <!-- Sub Title Section -->
+      <section class="page-header">
+        <h1>Stay Connected with Us</h1>
+        <p class="subtitle">
+          Subscribe to our newsletter and never miss the latest space
+          exploration news and discoveries
+        </p>
+      </section>
+      <!-- Sub Title Section -->
+      <div class="newsletter-content">
+        <div class="newsletter-info">
+          <h2>Why Subscribe?</h2>
+          <ul class="benefits-list">
+            <li>Monthly updates on space missions and discoveries</li>
+            <li>Exclusive interviews with astronauts and space experts</li>
+            <li>Early access to our space event information</li>
+            <li>Educational content about our solar system and beyond</li>
+            <li>Stunning images from telescopes and space probes</li>
+          </ul>
+
+          <div class="testimonial-block">
+            <blockquote>
+              "The Beyond Earth newsletter has become my favorite monthly read.
+              The content is fascinating and keeps me up-to-date with all the
+              exciting developments in space exploration."
+            </blockquote>
+            <p class="testimonial-author">— Maxwell Saira, Astronomy Scientist</p>
+          </div>
+        </div>
+
+        <div class="signup-form-container">
+          <h2>Sign Up for Our Newsletter</h2>
+          <form
+            class="newsletter-form"
+            method="post"
+            action="/newsletter-submit"
+          >
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" name="name" required />
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+
+            <div class="form-group">
+              <p class="radio-group-label">
+                Which space topics interest you the most?
+              </p>
+              <div class="radio-options">
+                <div class="radio-option">
+                  <input
+                    type="radio"
+                    id="topic-missions"
+                    name="topic"
+                    value="missions"
+                  />
+                  <label for="topic-missions">Space Missions</label>
+                </div>
+
+                <div class="radio-option">
+                  <input
+                    type="radio"
+                    id="topic-astronomy"
+                    name="topic"
+                    value="astronomy"
+                  />
+                  <label for="topic-astronomy">Astronomy & Telescopes</label>
+                </div>
+
+                <div class="radio-option">
+                  <input
+                    type="radio"
+                    id="topic-astronauts"
+                    name="topic"
+                    value="astronauts"
+                  />
+                  <label for="topic-astronauts">Astronauts & Space Life</label>
+                </div>
+
+                <div class="radio-option">
+                  <input
+                    type="radio"
+                    id="topic-tech"
+                    name="topic"
+                    value="technology"
+                  />
+                  <label for="topic-tech">Space Technology</label>
+                </div>
+
+                <div class="radio-option">
+                  <input
+                    type="radio"
+                    id="topic-all"
+                    name="topic"
+                    value="all"
+                    checked
+                  />
+                  <label for="topic-all">All Topics</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="frequency">Newsletter Frequency</label>
+              <select id="frequency" name="frequency">
+                <option value="weekly">Weekly Updates</option>
+                <option value="monthly" selected>Monthly Digest</option>
+                <option value="quarterly">Quarterly Summary</option>
+              </select>
+            </div>
+
+            <div class="form-group checkbox-group">
+              <input type="checkbox" id="agree" name="agree" required />
+              <label for="agree"
+                >I agree to receive emails about space exploration news and
+                updates</label
+              >
+            </div>
+
+            <button type="submit" class="submit-button">
+              Subscribe to Newsletter
+            </button>
+          </form>
+        </div>
+      </div>
+    </main>
+    <!-- Main Section -->
+    <!-- Footer Section -->
+    <footer class="site-footer">
+      <div class="footer-divider"></div>
+      <p class="copyright-text">Copyright &copy; Himal Bissessar | 2025</p>
+    </footer>
+    <!-- Footer Section -->
+  </body>
+</html>

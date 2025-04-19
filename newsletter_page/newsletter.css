@@ -1,0 +1,250 @@
+:root {
+  --max-width: 1000px;
+  --title-font-size: 1.5rem;
+  --text-font-weight-light: 100;
+  --margin-bottom-spacer: 8rem;
+  --hover-highlight-light-blue: rgb(216, 214, 238);
+  --primary-dark: #121212;
+  --primary-light: #f8f8f8;
+  --primary-gray: #333333;
+  --secondary-gray: #777777;
+  --accent-gray: #e0e0e0;
+  --input-border: #cccccc;
+  --button-hover: #222222;
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 2rem;
+  --spacing-lg: 3rem;
+}
+
+body {
+  font-family: "Saira", sans-serif;
+  background-color: var(--primary-light);
+  color: var(--primary-dark);
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navigation Section */
+#nav-container {
+  max-width: var(--max-width);
+  margin-bottom: var(--margin-bottom-spacer);
+  box-sizing: border-box;
+  margin-inline-start: auto;
+  margin-inline-end: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-title {
+  box-sizing: border-box;
+}
+
+.nav-title a {
+  text-decoration: none;
+  color: var(--primary-dark);
+}
+
+.nav-menu-container {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+  box-sizing: border-box;
+  gap: 4rem;
+}
+
+.nav-items {
+  box-sizing: border-box;
+  font-weight: 300;
+}
+.nav-items a {
+  color: var(--primary-dark);
+  text-decoration: none;
+}
+/* Navigation Section */
+
+/* Newsletter Container */
+.newsletter-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: var(--spacing-md);
+}
+
+.page-header {
+  text-align: center;
+  margin-bottom: var(--spacing-lg);
+  border-bottom: 2px solid var(--primary-dark);
+  padding-bottom: var(--spacing-sm);
+}
+
+.page-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  color: var(--secondary-gray);
+  margin-top: 0;
+}
+
+/* Newsletter Content Layout */
+.newsletter-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-lg);
+}
+
+/* Newsletter Info Section */
+.newsletter-info {
+  padding: var(--spacing-md);
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.newsletter-info h2 {
+  margin-top: 0;
+  border-bottom: 2px solid var(--accent-gray);
+  padding-bottom: var(--spacing-xs);
+  margin-bottom: var(--spacing-md);
+}
+
+.benefits-list {
+  padding-left: var(--spacing-md);
+  margin-bottom: var(--spacing-md);
+}
+
+.benefits-list li {
+  margin-bottom: var(--spacing-xs);
+}
+
+.testimonial-block {
+  background-color: var(--accent-gray);
+  padding: var(--spacing-md);
+  border-radius: 8px;
+  margin-top: var(--spacing-md);
+}
+
+.testimonial-block blockquote {
+  font-style: italic;
+  margin: 0 0 var(--spacing-sm) 0;
+}
+
+.testimonial-author {
+  text-align: right;
+  margin: 0;
+  font-weight: bold;
+}
+
+/* Signup Form */
+.signup-form-container {
+  background-color: white;
+  padding: var(--spacing-md);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.signup-form-container h2 {
+  margin-top: 0;
+  border-bottom: 2px solid var(--accent-gray);
+  padding-bottom: var(--spacing-xs);
+  margin-bottom: var(--spacing-md);
+}
+
+.newsletter-form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: var(--spacing-xs);
+  font-weight: bold;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group select {
+  padding: var(--spacing-sm);
+  border: 1px solid var(--input-border);
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.radio-group-label {
+  font-weight: bold;
+  margin-bottom: var(--spacing-sm);
+}
+
+.radio-options {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xs);
+}
+
+.radio-option {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+}
+
+.radio-option input[type="radio"] {
+  margin: 0;
+}
+
+.checkbox-group {
+  flex-direction: row;
+  align-items: center;
+  gap: var(--spacing-xs);
+}
+
+.checkbox-group input[type="checkbox"] {
+  margin: 0;
+}
+
+.submit-button {
+  background-color: var(--primary-dark);
+  color: white;
+  border: none;
+  padding: var(--spacing-sm);
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: var(--spacing-sm);
+}
+
+.submit-button:hover {
+  background-color: var(--button-hover);
+}
+
+/* Footer Section */
+.site-footer {
+  padding: 1.5rem 0;
+  text-align: center;
+  background-color: #f8f8f8;
+}
+
+.footer-divider {
+  height: 1px;
+  background-color: #333;
+  max-width: 80%;
+  margin: 0 auto 1rem auto;
+}
+
+.copyright-text {
+  color: #333;
+  font-size: 0.9rem;
+  margin: 0;
+}
+/* Footer Section */
